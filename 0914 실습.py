@@ -38,6 +38,8 @@ def mul(*args):
     return args[0] ** 2
   elif len(args) ==2:
     return args[0] * args[1]
+  else:
+      print('1개나 2개의 숫자를 입력하세요')
 
 mul(2)
 mul(2,4)
