@@ -127,6 +127,36 @@ for gugu in gugu_list:
         print(item)
     print('')
 
-
  6.
-list79=sorted(list(set([item for x in range(1,99) if x%7==0 or x%9==0])))
+list79=sorted(list(set([result for x in range(1,99) if x%7==0 or x%9==0])))
+
+result = []
+for x in range(1,100):
+    if x % 7 == 0 or x % 9 == 0:
+        result.append(x)
+
+print(result)
+
+bool(None)
+bool(0)
+bool([])
+bool('')
+
+l = []
+if not l:
+    print('empty list')
+
+
+def print_string(x):
+    print(x)
+    print(type(x))
+def print_int(x):
+    print(x)
+    print(type(x))
+
+def print_type(func):
+    def inner_func(*args **kwargs):
+        for arg in args:
+            print('args type:', type(args))
+        return f(*args)
+    return inner_func
